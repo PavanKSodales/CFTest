@@ -5,7 +5,6 @@
     <gt:Table id="idAllActionItem" 
 					rows="{ path: '/Employees'}" selectionMode="MultiToggle" enableSelectAll="false"
 					fixedColumnCount="2" enableBusyIndicator="true">
-
 					<gt:columns>
 						<gt:Column width="10rem" sortProperty="EmployeeID" autoResizable="true">
 							<Label text="Employee Name" design="Bold" width="100%" wrapping="true" textAlign="Center"/>
