@@ -1,0 +1,20 @@
+<mvc:View controllerName="sls.jbd.pospf.slsjbdttcpospfwfc.controller.Worklist"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m" xmlns:gt="sap.ui.table">
+    <Page id="page" title="{i18n>title}">
+    <gt:Table id="idAllActionItem" 
+					rows="{ path: '/Employees'}" selectionMode="MultiToggle" enableSelectAll="false"
+					fixedColumnCount="2" enableBusyIndicator="true">
+
+					<gt:columns>
+						<gt:Column width="10rem" sortProperty="EmployeeID" autoResizable="true">
+							<Label text="Employee Name" design="Bold" width="100%" wrapping="true" textAlign="Center"/>
+							<gt:template>
+								<Text text="{FirstName}"/>
+							</gt:template>
+						</gt:Column>
+						
+					</gt:columns>
+				</gt:Table>
+    </Page>
+</mvc:View>
